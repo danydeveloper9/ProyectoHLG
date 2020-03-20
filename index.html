@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Herreria López García</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Jarallax CSS -->
+    <link rel="stylesheet" href="css/jarallax.css">
+    <!-- Venobox CSS -->
+    <link rel="stylesheet" href="css/venobox.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reviews.css">
+
+
+    <!-- GOOGLE REVIEWS JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/google-places.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCbLMcnmzrIgmvm0pmhA3XJo9l5HI70U2E"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbLMcnmzrIgmvm0pmhA3XJo9l5HI70U2E&callback=initMap" type="text/javascript"></script> -->
+    <script>
+        jQuery(document).ready(function() {
+            $("#google-reviews").googlePlaces({
+                placeId: 'ChIJtdnQhfz70YURO0HWuHL7XsE',
+                render: ['reviews'],
+                min_rating: 4,
+                max_rows: 0
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="menu-navegacion" class="navbar navbar-dark bg-transparent navbar-expand-md py-3">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal"
+            aria-expanded="false" aria-label="Botón menú principal">
+                <!-- <i class="fas fa-bars h2 mb-0"></i> -->
+                <span class="boton-menu"></span> 
+            </button>
+
+            <a href="#contacto" class="btn btn-outline-primary order-md-1">Pedir una cotización</a>
+
+            <div id="menu-principal" class="collapse navbar-collapse">
+                <ul class="navbar-nav mt-3 mt-md-0">
+                    <li class="nav-item mb-1 mb-md-0 ml-md-0"><a href="#principal" class="nav-link">Inicio</a></li>
+                    <li class="nav-item mb-1 mb-md-0 ml-md-0"><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li class="nav-item mb-1 mb-md-0 ml-md-0"><a href="#conocenos" class="nav-link">Conocenos</a></li>
+                    <li class="nav-item mb-1 mb-md-0 ml-md-0"><a href="#comentarios" class="nav-link">Comentarios</a></li>
+                    <li class="nav-item mb-1 mb-md-0 ml-md-0"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- MAIN -->
+    <section id="principal" data-jarallax data-speed="0.5" class="w-100 jarallax main-slide d-flex justify-content-center align-items-center">
+
+        <picture class="jarallax-img">
+            <img src="images/slider-principal.jpg" alt="Fondo Herreria Lopez García">
+        </picture>
+
+        <div class="container text-center text-white">
+            <div class="row">
+                <div class="col-12 my-5 my-md-1">
+                    <h1 class="display-4 font-weight-bold">Herreria <br class="d-md-none"> López García</h1>
+                </div>
+                <div class="col-12">
+                    <h3 class="h4">Lo hecho en México, esta bien hecho.</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="bg-secondary text-white text-center py-5">
+        <div class="container rom-top">
+            <div class="row justify-content-between">
+                <h2 class="display-4 font-weight-bold w-100">Servicios</h2>
+                <div class="col-6 col-md-2 anim-servicios">
+                    <i class="fas fa-pencil-ruler fa-5x pb-3 mt-5"></i>
+                    <h5>Diseños <br class="d-md-none"> Especiales</h5>
+                </div>
+                <div class="col-6 col-md-2 anim-servicios">
+                    <i class="fas fa-chalkboard fa-5x pb-3 mt-5"></i>
+                    <h5>Estructuras Metalicas</h5>
+                </div>
+                <div class="col-6 col-md-2 anim-servicios">
+                    <i class="fab fa-codepen fa-5x pb-3 mt-5"></i>
+                    <h5>Aluminio</h5>
+                </div>
+                <div class="col-6 col-md-2 anim-servicios">
+                    <i class="fas fa-tools fa-5x pb-3 mt-5"></i>
+                    <h5>Herreria en General</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONOCENOS -->
+    <section id="conocenos" class="text-center text-truncate">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 p-0 shadow">
+                <img src="images/imagen01.jpg" alt="Herreria Lopez Garcia">
+            </div>
+            <div id="c-galeria" class="col-12 col-md-6 col-lg-7 p-0 d-grid align-items-center align-self-center h-galery">
+                <h5 class="text-secondary font-weight-bold h4 m-0 pt-5">Techumbres | Tapanchos | Escaleras</h5>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-light"><a class="venobox h-100 w-100" data-gall="gallery01"><img src="images/imagen02.jpg" class="img-fluid-3"></a></div>
+                        <div class="swiper-slide bg-light"><a class="venobox h-100 w-100" data-gall="gallery01"><img src="images/imagen03.jpg" class="img-fluid-3"></a></div>
+                        <div class="swiper-slide bg-light"><a class="venobox h-100 w-100" data-gall="gallery01"><img src="images/imagen04.jpg" class="img-fluid-3"></a></div>
+                        <div class="swiper-slide bg-light"><a class="venobox h-100 w-100" data-gall="gallery01"><img src="images/imagen05.jpg" class="img-fluid-3"></a></div>
+                        <div class="swiper-slide bg-light"><a class="venobox h-100 w-100" data-gall="gallery01"><img src="images/imagen06.jpg" class="img-fluid-3"></a></div>
+                        <div class="swiper-slide bg-light"><a class="venobox h-100 w-100" data-gall="gallery01"><img src="images/imagen07.jpg" class="img-fluid-3"></a></div>
+                        <div class="swiper-slide bg-light"><a class="venobox h-100 w-100" data-gall="gallery01"><img src="images/imagen08.jpg" class="img-fluid-3"></a></div>
+                        <div class="swiper-slide bg-light"><a class="venobox h-100 w-100" data-gall="gallery01"><img src="images/imagen09.jpg" class="img-fluid-3"></a></div>
+                        <div class="swiper-slide bg-light"><a class="venobox h-100 w-100" data-gall="gallery01"><img src="images/imagen10.jpg" class="img-fluid-3"></a></div>
+                        <!-- href="images/imagen02.jpg" -->
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BARRA CONTACTO -->
+    <section id="barra-contacto" class="bg-secondary text-white-50 py-5">
+        <div class="container rom-bottom">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-self-center">
+                    <p class="mb-0 font-weight-bold h2">Estamos a tus ordenes!</p>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end mt-4 mt-md-0">
+                    <a href="#contacto" class="btn btn-outline-primary">Pedir una Cotización</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="comentarios" class="py-5">
+        <h2 class="display-4 font-weight-bold text-center text-secondary">Comentarios</h2>
+        
+        <div class="container">
+            <div class="row">   
+                <div class="col-12">
+
+                    <div id="google-reviews"></div>
+                    <div id="schema" class="text-black-50"></div>
+
+                </div>
+                <div class="col-12 d-flex justify-content-center justify-content-md-end">
+                    <a id="btn-testimonios" href="http://search.google.com/local/writereview?placeid=ChIJtdnQhfz70YURO0HWuHL7XsE" target="_blanck" class="btn btn-outline-primary">Escribir Comentario</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CITA -->
+    <section id="cita"class="py-4 bg-secondary text-white-50">
+        <h6 class="h2 text-center m-0 pt-3 font-weight-bold">NO HAY IMPOSIBLES</h6>
+        <p class="text-center m-0 p-3 h6">
+            Nosotros somos la 4ta. generación transformando el acero en piezas artísticas, industriales y domésticas. <br>
+            Lo que nos permite ofrecer, nuestros servicios con calidad, seriedad, honradez y precios justos.
+        </p>
+    </section>
+
+
+    <!--Comunícate con nosotros-->
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-5">
+        <header class="text-center text-secondary">
+            <h2 class="display-4 font-weight-bold">Contacto</h2>
+        </header>
+        <div class="container">
+            <div class="row">
+
+                <div id="formulario" class="col-12 col-md-8 order-1 order-md-0">
+                    <div id="mail" class="mt-4 col-12 d-flex align-items-center">
+                        <i class="far fa-envelope fa-3x pr-3"></i>
+                        <p class="h5 m-0">herreria.lopezgarcia1@gmail.com</p>
+                    </div>
+                </div>
+
+                <div id="info" class="col-12 col-md-4 order-0 order-md-1">
+                    <div class="row justify-content-start align-items-center px-4 px-md-0">
+                        <div id="tel" class="mt-4 col-12 d-flex align-items-center">
+                            <i class="fab fa-whatsapp fa-3x pr-3"></i>
+                            <a class="h4 m-0">55 85 35 32 77</a>
+                            <!-- href="tel:5519860532 " -->
+                        </div>
+                        <div class="mt-4 col-12  align-items-center">
+                            <head>
+                                <i class="fas fa-calendar-alt fa-3x pr-3 d-inline-flex"></i>
+                                <h6 class="h5 m-0 d-inline-flex">Horario  de Atención</h6>
+                            </head>
+                            <table class="table table-hover mt-3">
+                                <tbody>
+                                  <tr>
+                                    <td>Lunes</td>
+                                    <td>8:00 - 18:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Martes</td>
+                                    <td>8:00 - 18:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Miércoles</td>
+                                    <td>8:00 - 18:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Jueves</td>
+                                    <td>8:00 - 18:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Viernes</td>
+                                    <td>8:00 - 18:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Sábado</td>
+                                    <td>8:00 - 14:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Domingo</td>
+                                    <td>Cerrado</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <!-- <script src="js/jquery-3.4.1.slim.min.js"></script> -->
+    <script src="js/popper.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Jarallax JS -->
+    <script src="js/jarallax.min.js"></script>
+    <!-- Venobox JS -->
+    <script src="js/venobox.min.js"></script> 
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Stickit JS -->
+    <script src="js/jquery.stickit.min.js"></script>
+    <!-- PageScroll2id JS -->
+    <script src="js/jquery.malihu.PageScroll2id.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+
+
+</body>
+</html>
