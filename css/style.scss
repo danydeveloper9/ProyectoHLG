@@ -84,7 +84,7 @@ body {
 -----------------------------------*/
 .bg-transparent {
   background-color: transparent !important;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
 }
 
 /*-----------------------------------
@@ -93,6 +93,7 @@ body {
 #menu-navegacion {
   position: absolute;
   width: 100%;
+  transition: all 0.5s ease;
 }
 #menu-navegacion button {
   border: none;
@@ -136,13 +137,12 @@ body {
 
 .navbar-open {
   background-color: #283148 !important;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
 }
 
 /*MENU FIJO*/
 .menu-fijo{
   background-color: darken($secundario, 15%) !important;
-  width: 100% !important;
   transition: all 0.5s ease;
 }
 
@@ -326,7 +326,7 @@ body {
   }
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #fff;
-    background-color: $principal;
+    background-color: $secundario;
   }
   .navbar-dark .navbar-nav .nav-link::after {
     content: "";

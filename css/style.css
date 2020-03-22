@@ -71,15 +71,17 @@ body {
 -----------------------------------*/
 .bg-transparent {
   background-color: transparent !important;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 /*-----------------------------------
     7. ESTILOS MENU DE NAVEGACION 
 -----------------------------------*/
 #menu-navegacion {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 #menu-navegacion button {
   border: none;
@@ -129,13 +131,12 @@ body {
 
 .navbar-open {
   background-color: #283148 !important;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 /*MENU FIJO*/
 .menu-fijo {
   background-color: #0d1017 !important;
-  width: 100% !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
@@ -322,7 +323,7 @@ body {
 
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #fff;
-    background-color: #913535; }
+    background-color: #283148; }
 
   .navbar-dark .navbar-nav .nav-link::after {
     content: ""; }
@@ -371,5 +372,4 @@ body {
   #servicios .rom-top::after {
     width: 0;
     height: 0; } }
-
 /*# sourceMappingURL=style.css.map */
