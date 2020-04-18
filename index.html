@@ -194,20 +194,61 @@
         <div class="container">
             <div class="row">
 
-                <div id="formulario" class="col-12 col-md-8 order-1 order-md-0">
-                    <div id="mail" class="mt-4 col-12 d-flex align-items-center">
-                        <i class="far fa-envelope fa-3x pr-3"></i>
-                        <p class="h5 m-0">herreria.lopezgarcia1@gmail.com</p>
+                <div id="formulario" class="col-12 col-md-7 order-1 order-md-0 d-flex justify-content-center d-md-block">
+                    <div id="mail" class="row mt-md-4 col-12 d-flex align-items-center justify-content-center p-0">
+                        
+                        <div class="col-12 row mt-3 justify-content-md-start align-items-md-center">
+                            <i class="far fa-envelope fa-3x pr-3"></i>
+                            <p class="h5 m-0 align-self-center">herreria.lopezgarcia1@gmail.com</p>
+                        </div>
+
+                        <form action="enviar.php" method="post" role="form" id="formulario" class="col-12 mt-5 formulario-contacto">
+                             <div class="form-group">
+                                <label for="nombre" class="control-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduzca su nombre" required autofocus>
+                             </div>
+                             <div class="form-group">
+                                <label for="telefono" class="control-label">Telefono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Introduzca su telefono">
+                             </div>
+                             <div class="form-group">
+                                <label for="correo" class="control-label">Correo</label>
+                                <input type="email" class="form-control" id="correo" name="correo" placeholder="correo@mail.com" required>
+                             </div>
+                             <div class="form-group">
+                                <label for="mensaje" class="control-label">Mensaje</label>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="3" class="form-control" placeholder="Introduzca su mensaje" required></textarea>
+                             </div>
+                             <div class="form-group">                
+                                <input type="submit" class="btn btn-primary" value="Enviar">
+                                <input type="reset" class="btn btn-secondary" value="Limpiar" id="limpia">                
+                            </div>
+
+                            <!-- <div class="alert hide alert-dismissible fade" id="alerta">
+                                <button type="button" id="btn-alerta" class="close d-none" data-dismiss="alert">&times;</button>
+                                <button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                <strong class="respuesta"></strong> <span class="mensaje-alerta"></span>
+                            </div> -->
+
+                            <div class="alert alert-dismissible fade" role="alert" id="alerta">
+                              <strong class="respuesta"></strong> <br> <span class="mensaje-alerta"></span>
+                              <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                        </form>
+
                     </div>
                 </div>
 
-                <div id="info" class="col-12 col-md-4 order-0 order-md-1">
+                <div id="info" class="col-12 col-md-5 order-0 order-md-1">
                     <div class="row justify-content-start align-items-center px-4 px-md-0">
                         <div id="tel" class="mt-4 col-12 d-flex align-items-center row">
                             <i class="fab fa-whatsapp fa-3x col-3 pr-3"></i>
-                            <article class=" col-9 row px-0 justify-content-md-end justify-content-lg-start">
-                                <a class="h4 m-0 col-9 px-0 col-md-10">55 85 35 32 77</a>
-                                <a class="h4 m-0 col-9 px-0 col-md-10">55 79 17 01 18</a>
+                            <article class=" col-9 row px-0 ml-1">
+                                <a class="h4 m-0 col-9 px-0 col-md-10 mb-1">55 85 35 32 77</a>
+                                <a class="h4 m-0 col-9 px-0 col-md-10 mt-1">55 79 17 01 18</a>
                             </article>
                             <!-- href="tel:5519860532 " -->
                         </div>
@@ -257,8 +298,8 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>
-
+    <footer class="py-3 text-center text-md-left bg-secondary text-white-50">
+        <h6 class="m-0 px-5">developed by danyWEB</h6>
     </footer>
 
     <!-- Bootstrap JS -->
